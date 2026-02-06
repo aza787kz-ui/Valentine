@@ -1,1 +1,65 @@
-# Valentine
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>A Little Gift 💖</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 320px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #ff4d6d;
+    }
+
+    .gift {
+      font-size: 60px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gift:hover {
+      transform: scale(1.1);
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hey beautiful 💕</h1>
+    <div class="gift" onclick="openGift()">🎁</div>
+    <div class="message" id="message">
+      You should never be sad 😊<br><br>
+      Because you have me 💖<br><br>
+      And you are the most beautiful girl in the world ✨
+    </div>
+  </div>
+
+  <script>
+    function openGift() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
